@@ -1,0 +1,26 @@
+{
+  "name": "pro12",
+  "version": "1.0.0",
+  "description": "simple weblog",
+  "main": "app.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=production node app.js",
+    "dev": "cross-env NODE_ENV=development nodemon app.js"
+  },
+  "keywords": [],
+  "author": "pooya vaghef",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^5.0.2",
+    "cross-env": "^7.0.3",
+    "dotenv": "^10.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.1",
+    "font-awesome": "^4.7.0",
+    "mongoose": "^5.12.14",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.7",
+    "yup": "^0.32.9"
+  }
+}
