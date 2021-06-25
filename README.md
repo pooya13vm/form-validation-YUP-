@@ -1,6 +1,6 @@
 # Form validation (Yup)
 ## General info
-A SSR weblog with logon and register forms falidation with Yup
+A SSR weblog with login and register forms validation with Yup
 
 ## Technologies
  Project is created with:
