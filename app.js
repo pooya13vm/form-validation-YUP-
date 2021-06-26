@@ -17,7 +17,6 @@ app.use(express.urlencoded({ extended: false }));
 
 //*! logging (morgan)
 if (process.env.NODE_ENV == "development") {
-  console.log("hiihi");
   app.use(morgan("dev"));
 }
 
@@ -39,6 +38,11 @@ app.use(express.static(path.join(__dirname, process.env.FONTAWESOME)));
 app.use("/", require("./routes/blog"));
 app.use("/users", require("./routes/users"));
 app.use("/dashboard", require("./routes/dashboard"));
+
+//*! 404 page
+app.use((req, res) => {
+  res.render("404", { pageTitle: "page does not found | 404", path: "/404" });
+});
 
 const PORT = process.env.PORT || 3000;
 
